@@ -71,3 +71,17 @@ body {
   stroke-dashoffset: var(--initialStroke);
   transition: stroke-dashoffset var(--transitionDuration) ease;
 }
+
+.banner-right {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.list-indent {
+  padding-top: 10px;
+  padding-left: 20px;
+}
