@@ -42,6 +42,10 @@ body {
   position: relative;
 }
 
+.circle__svg {
+  transform: rotate(-90deg);
+}
+
 .percent {
   width: 100%;
   top: 50%;
@@ -67,7 +71,7 @@ body {
   --initialStroke: 0;
   --transitionDuration: 0;
   stroke-opacity: 1;
-  stroke-dasharray: var(--initialStroke); 
+  stroke-dasharray:  var(--initialStroke); 
   stroke-dashoffset: var(--initialStroke);
   transition: stroke-dashoffset var(--transitionDuration) ease;
 }
