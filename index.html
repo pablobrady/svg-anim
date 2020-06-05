@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Note Display</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   
-  <ul>
+  <ul class="display-container">
     <li class="note-display">
       <div class="circle">
         <svg width="84" height="84" class="circle__svg">
@@ -18,8 +19,8 @@
           <span class="percent__int">0.</span>
           <span class="percent__dec">00</span>
         </div>
-        <span class="label">Transparent</span>
       </div>
+      <span class="label">Transparent</span>
     </li>
     <li class="note-display">
       <div class="circle">
@@ -31,8 +32,8 @@
           <span class="percent__int">0.</span>
           <span class="percent__dec">00</span>
         </div>
-        <span class="label">Reasonable</span>
       </div>
+      <span class="label">Reasonable</span>
     </li>
     <li class="note-display">
       <div class="circle">
@@ -44,8 +45,8 @@
           <span class="percent__int">0.</span>
           <span class="percent__dec">00</span>
         </div>
-        <span class="label">Usable</span>
       </div>
+      <span class="label">Usable</span>
     </li>
     <li class="note-display">
       <div class="circle">
@@ -57,19 +58,20 @@
           <span class="percent__int">0.</span>
           <span class="percent__dec">00</span>
         </div>
-        <span class="label">Exemplary</span>
       </div>
+      <span class="label">Exemplary</span>
     </li>
   </ul>
 
-
-  <h2>T.R.U.E.</h2>
-  <ul>
-    <li>Transparent: Are code changes consequences clear?</li>
-    <li>Reasonable: Is cost benefit worth it?</li>
-    <li>Usable: Will I be able to reuse it in unexpected scenarios?</li>
-    <li>Exemplary: Does it present high quality as an example for future code?</li>
-  </ul>
+  <!-- 
+    <h2>T.R.U.E.</h2>
+    <ul>
+      <li>Transparent: Are code changes consequences clear?</li>
+      <li>Reasonable: Is cost benefit worth it?</li>
+      <li>Usable: Will I be able to reuse it in unexpected scenarios?</li>
+      <li>Exemplary: Does it present high quality as an example for future code?</li>
+    </ul>
+  -->
 
   <script src="./scripts.js"></script>
 </body>

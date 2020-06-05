@@ -8,7 +8,7 @@
 
 body {
   height: 100vh;
-  color: white;
+  color: #fff;
   display: flex;
   background: #3e423a;
   font-family: 'Nixie One', cursive;
@@ -37,3 +37,37 @@ body {
 .note-display:nth-child(2) .circle__progress { stroke: #ff00aa; }
 .note-display:nth-child(3) .circle__progress { stroke: #aa00ff; }
 .note-display:nth-child(4) .circle__progress { stroke: #00aaff; }
+
+.circle {
+  position: relative;
+}
+
+.percent {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  line-height: 28px;
+  transform: translate(-50%, -50%);
+}
+
+.percent__int { font-size: 28px; }
+.percent__dec { font-size: 12px; }
+
+.label {
+  font-family: "Raleway", serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.circle__progress--fill {
+  --initialStroke: 0;
+  --transitionDuration: 0;
+  stroke-opacity: 1;
+  stroke-dasharray: var(--initialStroke); 
+  stroke-dashoffset: var(--initialStroke);
+  transition: stroke-dashoffset var(--transitionDuration) ease;
+}
