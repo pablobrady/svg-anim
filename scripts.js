@@ -4,18 +4,17 @@ const transitionDuration = 900;
 displays.forEach(display => {
   let progress = display.querySelector('.circle__progress--fill');
   let radius = progress.r.baseVal.value; // <svg><circle r="38"... 
-  console.log('progress.r = ', progress.r);
   let circumference = 2 * Math.PI * radius;
   let note = parseFloat(display.dataset.note);
   let offset = circumference * (10 - note) / 10;
-  console.log('offset = " + offset');
 
   progress.style.setProperty('--transitionDuration', `${transitionDuration}ms`);
   progress.style.setProperty('--initialStroke', circumference);
 
   setTimeout(() => progress.style.strokeDashoffset = offset, 100)
 
-  strokeTransition(() => progress.style.strokeDashoffset = offset, 100);
+  // strokeTransition(() => progress.style.strokeDashoffset = offset, 100);
+  strokeTransition( display, note);
 });
 
 function strokeTransition(display, note) {
