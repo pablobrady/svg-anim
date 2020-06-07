@@ -28,22 +28,20 @@ body {
 
 .circle__progress {
   fill: none;
-  stroke-width: 3;
+  stroke-width: 10;
   stroke-opacity: 0.3;
   stroke-linecap: round;
 }
 
 .note-display:nth-child(1) .circle__progress { stroke: #aaff00; }
-.note-display:nth-child(2) .circle__progress { stroke: #ff00aa; }
-.note-display:nth-child(3) .circle__progress { stroke: #aa00ff; }
-.note-display:nth-child(4) .circle__progress { stroke: #00aaff; }
+.note-display:nth-child(2) .circle__progress { stroke: #ff0000; }
 
 .circle {
   position: relative;
 }
 
 .circle__svg {
-  transform: rotate(-90deg);
+  transform: rotate(125deg);
 }
 
 .percent {

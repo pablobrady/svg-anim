@@ -2,76 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Note Display</title>
+  <title>Playground</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   
   <ul class="display-container">
-    <li class="note-display" data-note="7.50">
+    <li class="note-display" data-note="90" data-mph="1">
       <div class="circle">
-        <svg width="84" height="84" class="circle__svg">
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+        <svg width="160" height="160" class="circle__svg">
+          <circle cx="78" cy="78" r="50" class="circle__progress circle__progress--path"></circle>
+          <circle cx="78" cy="78" r="50" class="circle__progress circle__progress--fill"></circle>
         </svg>
         <div class="percent">
-          <span class="percent__int">0.</span>
-          <span class="percent__dec">00</span>
+          <span class="percent__int">0</span>
+
         </div>
       </div>
-      <span class="label">Transparent</span>
+      <span class="label">MPH</span>
     </li>
-    <li class="note-display" data-note="9.27">
+
+    <li class="note-display" data-note="90" data-mph="0">
       <div class="circle">
-        <svg width="84" height="84" class="circle__svg">
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+        <svg width="160" height="160" class="circle__svg">
+          <circle cx="78" cy="78" r="50" class="circle__progress circle__progress--path"></circle>
+          <circle cx="78" cy="78" r="50" class="circle__progress circle__progress--fill"></circle>
         </svg>
         <div class="percent">
-          <span class="percent__int">0.</span>
-          <span class="percent__dec">00</span>
+          <span class="percent__int">0</span>
+
         </div>
       </div>
-      <span class="label">Reasonable</span>
-    </li>
-    <li class="note-display" data-note="6.93">
-      <div class="circle">
-        <svg width="84" height="84" class="circle__svg">
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
-        </svg>
-        <div class="percent">
-          <span class="percent__int">0.</span>
-          <span class="percent__dec">00</span>
-        </div>
-      </div>
-      <span class="label">Usable</span>
-    </li>
-    <li class="note-display" data-note="8.72">
-      <div class="circle">
-        <svg width="84" height="84" class="circle__svg">
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
-          <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
-        </svg>
-        <div class="percent">
-          <span class="percent__int">0.</span>
-          <span class="percent__dec">00</span>
-        </div>
-      </div>
-      <span class="label">Exemplary</span>
+      <span class="label">RPM</span>
     </li>
   </ul>
-
-  <div class="banner-right">
-    <h2>T.R.U.E.</h2>
-    <ul class="list-indent">
-      <li><b>Transparent:</b> Are code changes consequences clear?</li>
-      <li><b>Reasonable:</b> Is cost benefit worth it?</li>
-      <li><b>Usable:</b> Will I be able to reuse it in unexpected scenarios?</li>
-      <li><b>Exemplary:</b> Does it present high quality as an example for future code?</li>
-    </ul>
-  </div>
 
   <script src="./scripts.js"></script>
 </body>
